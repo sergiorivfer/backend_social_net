@@ -20,7 +20,6 @@ connection();
 // crear el servidor en node
 const app = express();
 const puerto = process.env.PORT || 3900;
-
 // configurar cors para que acepte peticiones del frontend
 app.use(cors({
     origin:'*',
