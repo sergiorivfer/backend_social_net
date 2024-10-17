@@ -16,7 +16,7 @@ export const register = async (req, res) => {
     let params = req.body;
 
     // Validar los datos obtenidos (que los datos obligatorios existan)
-    if(!params.name  !params.last_name  !params.nick  !params.email  !params.password) {
+    if(!params.name || !params.last_name || !params.nick || !params.email || !params.password) {
       return res.status(400).json({
         status: "error",
         message: "Faltan datos por enviar"
